@@ -1,6 +1,6 @@
-# Alpha Foundry: Quantitative Trading Infrastructure
+# Alpha Foundry: Modular Quantitative Research Framework
 
-A professional-grade, object-oriented backtesting engine designed to demonstrate **system engineering**, **financial rigor**, and **clean architecture**. This project simulates a production-like environment for testing trading strategies against real-world data (ETFs) or synthetic markets.
+A robust, object-oriented backtesting engine designed to demonstrate **clean architecture**, **system design principles**, and **financial data integrity**. This project provides a scalable infrastructure for testing trading strategies against real-world and synthetic datasets.
 
 ---
 
