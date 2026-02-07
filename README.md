@@ -17,12 +17,21 @@ alpha-foundry/
 │   ├── base.py          # Abstract Base Class (Interface)
 │   ├── momentum.py      # Moving Average Crossover Strategy
 │   └── mean_reversion.py # Bollinger Band Mean Reversion
+├── tests/               # Unit & Integration Tests
+│   ├── test_data_loader.py
+│   ├── test_engine.py
+│   ├── test_metrics.py
+│   ├── test_portfolio.py
+│   └── test_strategies.py
 ├── utils/
 │   ├── visualization.py # Matplotlib plotting wrappers
 │   ├── metrics.py       # Financial math calculations
 │   └── logger.py        # Standardized logging configuration
 ├── results/             # Auto-generated dashboards (.png)
-└── main.py              # Entry point implementation
+├── main.py              # Entry point implementation
+├── Makefile             # Command runner (install, run, test)
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
 ```
 
 ---
@@ -89,7 +98,7 @@ The system also saves visual Dashboards to the `results/` folder:
 
 ## Key Concepts & Implementation Details
 
-This project bridges the gap between "notebook research" and "production engineering" by implementing the following concepts:
+This project bridges the gap between "notebook research" and "software engineering best practices" by implementing the following concepts:
 
 ### 1. Software Engineering Principles
 *   **Separation of Concerns**: The system is modular. The *Strategy* doesn't know about the *Accountant*. The *Engine* doesn't know the math behind the *Signals*.

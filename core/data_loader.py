@@ -23,11 +23,8 @@ class DataLoader:
         df = pd.read_csv(filepath, parse_dates=True, index_col=0)
         
         # Basic validation
-        required_columns = ['close']
-        for col in required_columns:
-            if col not in df.columns and col.capitalize() not in df.columns:
-                 # Try to normalize columns to lowercase
-                 df.columns = [c.lower() for c in df.columns]
+        # Always normalize columns to lowercase for consistency
+        df.columns = [c.lower() for c in df.columns]
         
         if 'close' not in df.columns:
              raise ValueError("Data must contain a 'close' column")
